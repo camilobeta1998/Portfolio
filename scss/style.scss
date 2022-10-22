@@ -1,0 +1,111 @@
+
+
+*{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+}
+
+body{
+        .container_father{
+                display: grid;
+                grid-template-rows: 100vh 40vh 60vh 200vh 100vh 400px  ;
+                grid-template-areas: 'section_uno'
+                                                  'acerca_de_mi'
+                                                  'skills'
+                                                  'portfolio'
+                                                  'contacto'
+                                                  'footer';
+                
+
+                .section_uno{
+                        background-color: #FFFFFF;
+                        grid-area: section_uno;                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .tarjeta__presentacion{
+                                width: 50%;
+                                height: 45%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                
+                                width: 50%;
+                                height: 52%;
+                  
+                                .tarjeta__presentacion__letras{
+                                       
+                                        width: 60% ;
+                                        height: 100%;
+
+                                        div{
+                                                display: flex;
+                                                justify-content: flex-end;
+                                                .saludo{
+                                                        font-size: 20px;
+                                                        margin-right: 20px;
+                                                        font-family: 'Poppins', sans-serif;
+                                                        font-weight: 600;
+                                                       
+                                                }
+                                        }
+                                        div{
+                                                .nombre{
+                                                        font-weight: 1000;
+                                                        color: black;
+                                                        font-size: 64px;
+                                                        font-family: 'Poppins', sans-serif;
+                                                        margin-right: 20px;
+                                                }
+                                        }
+                                        div{
+                                                .apellido{
+                                                        font-weight: 1000;
+                                                        color: black;
+                                                        font-size: 64px;
+                                                        font-family: 'Poppins', sans-serif;
+                                                        margin-right: 20px;
+                                                }
+                                        }
+                                        div{
+                                                .profesion{
+                                                        font-family: 'Poppins', sans-serif;
+                                                        font-size: 16px;
+                                                        margin-right: 20px;
+                                                        font-weight: 400;
+                                                }
+                                        }
+                                        .container__contactame{
+                                                height: 85px;
+                                                #contactame{
+                                                        height: 50px;
+                                                        background-color: black;
+                                                        font-size: 16px;
+                                                        padding: 12px 16px;
+                                                        margin-right: 20px;
+                                                        border-radius: 5px;
+                                                        position: relative;
+                                                        top: 30px;
+                                                        box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.75);
+                                                        a{
+                                                                text-decoration: none;
+                                                                color: white;
+                                                                font-family: 'Poppins', sans-serif;
+
+                                                        }
+                
+                                                }
+                                        }
+                                }
+                                .tarjeta__presentacion__foto{
+                                        width: 40%;
+                                        .foto{
+                                                width: 300px;
+                                                height: 350px;
+                                                border-radius: 10px;
+                                        }
+                                }
+                                
+                        }
+                }
+        }
+}
