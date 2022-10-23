@@ -22,15 +22,32 @@ body .container_father .section_uno .tarjeta__presentacion {
   display: flex;
   flex-wrap: wrap;
   width: 50%;
-  height: 52%;
+  height: 47%;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  body .container_father .section_uno .tarjeta__presentacion {
+    height: 740px;
+    width: 400px;
+    flex-direction: column;
+  }
 }
 body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras {
   width: 60%;
-  height: 100%;
+  height: 350px;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras {
+    width: 100%;
+  }
 }
 body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras div {
   display: flex;
   justify-content: flex-end;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras div {
+    justify-content: center;
+  }
 }
 body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras div .saludo {
   font-size: 20px;
@@ -71,19 +88,54 @@ body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacio
   position: relative;
   top: 30px;
   box-shadow: 0px 0px 8px -2px rgba(0, 0, 0, 0.75);
-}
-body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras .container__contactame #contactame a {
   text-decoration: none;
   color: white;
   font-family: "Poppins", sans-serif;
 }
+body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras .container__contactame #contactame:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: black;
+}
+body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras div a {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.7s ease-in-out all;
+}
+body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras div a.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras div p {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.7s ease-in-out all;
+}
+body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__letras div p.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
 body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__foto {
   width: 40%;
+}
+@media only screen and (min-width: 481px) and (max-width: 960px) {
+  body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__foto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__foto .foto {
   width: 300px;
   height: 350px;
   border-radius: 10px;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: 0.8s ease-in-out all;
+}
+body .container_father .section_uno .tarjeta__presentacion .tarjeta__presentacion__foto img.visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
 }
 
 /*# sourceMappingURL=style.css.map */
